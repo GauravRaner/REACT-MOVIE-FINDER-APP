@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "react-loading-skeleton": "^3.4.0",
+    "start": "react-scripts start --host 0.0.0.0"
+
+  }
+}

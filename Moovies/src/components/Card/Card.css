@@ -1,0 +1,119 @@
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
+}
+.movie-card {
+  position: relative;
+  width: 210px;
+  height: 320px;
+  border: 1px solid aqua;
+  border-radius: 15px;
+  margin-top: 46px;
+  overflow: hidden;
+}
+
+.movie-card img {
+  height: 320px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.movie-card:hover{
+  transform: scale(1.2);
+  z-index: 1000;
+  transition: transform 0.4s ease;
+
+}
+
+.movie-card .card-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(188, 168, 168, 0.7);
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  left: auto;
+}
+.card-text h2{
+  font-size: 15px;
+  font-weight: bold;
+}
+.card-text p i{
+  color: rgb(234, 166, 9);
+
+}
+
+.movie-card:hover .card-text {
+  opacity: 1;
+}
+@media screen and (max-width: 480px) {
+  .movie-card{
+    width: 170px;
+    height: 280px;
+  }
+}
+@media screen and (max-width:320px){
+  .movie-card{
+    width: 130px;
+    height: 210px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and  (max-width: 768px) {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
+.card {
+  position: relative;
+}
+
+.card:hover {
+  font-weight: bold;
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card:hover p{
+  display: none;
+}
+.card:hover span {
+  display: block;
+  color: white;
+  text-wrap: wrap;
+  font-size: 10px;
+  overflow: hidden;
+  font-size: 10px;
+  text-overflow: inherit;
+}
+

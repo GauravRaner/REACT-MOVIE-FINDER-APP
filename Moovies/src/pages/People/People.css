@@ -1,0 +1,67 @@
+
+.people-card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.people-card{
+  width: 210px;
+  height: 280px;
+  border: 1px solid black;
+  position: relative;
+  margin-top: 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.people-card img{
+  height: 270px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.people-card :hover{
+  transform: scale(1.1);
+  transition: all ease 0.3s;
+}
+.people-card-text:hover{
+  opacity: 1;
+}
+.people-card .people-card-text{
+  position: absolute;
+  left: 16px;
+  bottom: 20px;
+  color: white;
+  opacity: 0;
+}
+.people-card-text h2{
+  font-weight: bold;
+  font-size: 20px;
+}
+.people-card:hover .people-card-text {
+  opacity: 1;
+}
+@media screen and (max-width: 480px) {
+  .people-card{
+    width: 170px;
+    height: 280px;
+  }
+}
+@media screen and (max-width:320px){
+  .people-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .people-card{
+    width: 130px;
+    height: 180px;
+    margin-top: 10px;
+  }
+  .people-card img{
+    width: 130px;
+    height: 180px;
+  }
+}
