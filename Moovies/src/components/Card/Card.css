@@ -61,9 +61,14 @@
 }
 @media screen and (max-width:320px){
   .movie-card{
-    width: 130px;
-    height: 210px;
+    width: 120px;
+    height: 190px;
     margin-top: 10px;
+  }
+  .card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
